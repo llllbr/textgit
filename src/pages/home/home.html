@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>计算器</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <yunsuan></yunsuan>
+
+
+
+
+num1:
+	<ion-input type="text" placeholder="num1" [(ngModel)]="num1"></ion-input>
+	<br> num2:
+	<ion-input type="text" placeholder="num2" [(ngModel)]="num2"></ion-input>
+	<br> op:
+	<button ion-button color="secondary" (click)="jsq('+')">+</button>
+	<button ion-button color="secondary" (click)="jsq('-')">-</button>
+	<button ion-button color="secondary" (click)="jsq('*')">*</button>
+	<button ion-button color="secondary" (click)="jsq('/')">/</button>
+  <br> ans:
+ 
+  <ion-input type="text" placeholder="ans" [(ngModel)]="ans"></ion-input>
+
+ 
+</ion-content>

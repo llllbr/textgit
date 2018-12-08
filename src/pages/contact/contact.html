@@ -1,0 +1,20 @@
+// contact.html
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      联系人
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of contactInfo">
+      <div style="display: flex;flex-direction: column;">
+        <span>姓名:{{item?.name}}</span>
+        <span>年龄:{{item?.age}}</span>
+        <span>信息:{{item?.message}}</span>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>
